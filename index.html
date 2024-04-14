@@ -7,6 +7,7 @@
     <title>sign-in</title>
 </head>
 <body>
+    <script src="script.js" defer></script>
     <video id="background" autoplay loop muted poster="resources/background_image.jpeg">
         <source src="resources/background.mp4" type="video/mp4">
     </video>
@@ -19,42 +20,43 @@
 
         <div class="container">
             <div>
-            <label for="first_name">FIRST NAME</label>
-            <input type="text" id="first_name" name="first_name" required>
+            <label for="first_name">FIRST NAME&nbsp;&nbsp;<span>*required</span></label>
+            <input type="text" id="first_name" name="first_name" placeholder="John" required>
             </div>
        
             <div>
             <label for="last_name">LAST NAME</label>
-            <input type="text" id="last_name" name="last_name" required>
+            <input type="text" id="last_name" name="last_name" placeholder="Williams">
             </div>
         </div>
 
         <div class="container">
             <div>
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="mail" placeholder="abc@gmail.com" required>
+            <label for="email">EMAIL &nbsp;&nbsp;<span>*required</span></label>
+            <input type="email" id="email" name="mail" placeholder="Youremail@gmail.com" required>
             </div>
         
             <div>
-            <label for="username">USER NAME</label>
+            <label for="username">USER NAME &nbsp;&nbsp;<span> *required</span></label>
             <input type="text" id="username" name="user" required>
             </div>
         </div>
 
         <div class="container">
             <div>
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password" required>
+            <label for="password">PASSWORD &nbsp;&nbsp;<span> *required</span></label>
+            <input type="password" id="password" name="password" placeholder="password" required>
+            <span class="alert">*password does not match</span>
             </div>
         
             <div>
-            <label for="confirm">CONFIRM PASSWORD</label>
+            <label for="confirm">CONFIRM PASSWORD&nbsp;&nbsp;<span> *required</span></label>
             <input type="password" id="confirm_pass" name="confirm_pass" required>
             </div>
         </div>
 
         <button type="submit">Create Account</button>
-
+        <span>Already have an account ? <a href="https://nikhileshs.github.io/Sign-up-Form/" target="_blank">Log in</a></span>
     </form>
     </div>
 </body>
