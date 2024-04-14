@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     color: aliceblue;
     padding-top: 100px;
     --font1 : "Kanit", sans-serif;
+    --font2 : "Noto Serif", serif;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -19,8 +23,8 @@
 }
 
 img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 form{
@@ -42,11 +46,22 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    padding-top: 30px;
 }
 
 input,label{
     display: flex;
+}
+input:valid{
+    border: 2px solid rgb(14, 243, 14);
+    border-radius: 5px;
+}
+input:invalid{
+    border: 2px solid red;
+    border-radius: 5px;
+}
+input:focus{
+    border: 2px solid rgb(100, 100, 247);
 }
 
  .con .logo{
@@ -57,4 +72,22 @@ input,label{
 button{
     position: relative;
     top: 25px;
+}
+
+h1{
+    font-family: var(--font2);
+    font-size: 6rem;
+}
+
+button{
+    background-color: #03e9b7;
+    height: 50px;
+    width: 200px;
+    font-family: var(--font1);
+    font-size: larger;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #007c61b9;
 }
