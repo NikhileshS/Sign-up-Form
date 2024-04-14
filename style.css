@@ -1,0 +1,28 @@
+:root{
+    color: aliceblue;
+}
+
+#background{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
