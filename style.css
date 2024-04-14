@@ -1,5 +1,6 @@
 :root{
     color: aliceblue;
+    padding-top: 100px;
 }
 
 #background{
@@ -25,4 +26,20 @@ form{
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.container{
+    display: flex;
+}
+
+.con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input,label{
+    display: flex;
 }
